@@ -10,25 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-class Mobile
-{
-	String brand;
-	String model;
-	double mrp;
-	double discount;
+class Mobile {
+  String brand;
+  String model;
+  double mrp;
+  double discount;
 
-	Mobile (this.brand, this.model, this.mrp, this.discount);
-	
-  double getActualPrice()
-	{
-		return (mrp - ((mrp*discount)/100));
-	}
-	void printDetails()
-	{
-		print("Brand : $brand");
-		print("Model : $model");
-		print("MRP : $mrp");
-		print("Discount : $discount");
-		print("Discount Price : ${getActualPrice()}");
-	}
+  Mobile(this.brand, this.model, this.mrp, this.discount);
+
+  double getActualPrice() {
+    return (mrp - ((mrp * discount) / 100));
+  }
+
+  void printDetails() {
+    print("Brand : $brand");
+    print("Model : $model");
+    print("MRP : $mrp");
+    print("Discount : $discount");
+    print("Discount Price : ${getActualPrice()}");
+  }
 }
